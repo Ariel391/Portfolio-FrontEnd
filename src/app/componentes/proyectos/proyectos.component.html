@@ -1,0 +1,22 @@
+<div class="proy container-fluid">
+    <h1 class="p-3">Proyectos</h1>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button type="button" class="btn btn-primary" routerLink="/nuevopro" *ngIf="isLogged">
+            <i class="bi bi-pencil-square"></i> AGREGAR PROYECTOS
+        </button>
+    </div>
+    <div class="row p-3" *ngFor="let Proyectos of proyectos">
+        <h2>{{Proyectos.nombre}}</h2>
+        <p><small>{{Proyectos.fecha}}</small></p>
+        <p>{{Proyectos.descripcion}}</p>
+        <a class="col-1" href="https://github.com/" target="_blank"><img src="assets/img/prs.jpg" alt="Logo del proyecto"></a>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end boton" *ngIf="isLogged">
+            <button class="btn btn-success" routerLink="/editpro/{{Proyectos.id}}">
+                <i class="bi bi-pencil-fill"></i> EDITAR</button>          
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end boton" *ngIf="isLogged">
+            <button class="btn btn-danger" (click)="delete(Proyectos.id)">
+                <i class="bi bi-trash-fill"></i> BORRAR</button>       
+        </div>
+    </div>
+</div>

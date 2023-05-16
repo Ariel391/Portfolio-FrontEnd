@@ -1,0 +1,25 @@
+<section class="vh-100" style="background-color: #141547;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark-subtle text-black" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <h3 class="mb-5">Iniciar sesión</h3>
+              <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+                <div class="form-outline mb-4">
+                  <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" placeholder="Usuario" [(ngModel)]="nombreUsuario" required/>
+                  <label class="form-laber" for="nombreUsuario"></label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Contraseña" [(ngModel)]="password" required/>
+                  <label class="form-laber" for="password"></label>
+                </div>               
+                <!-- Checkbox -->
+                <button class="btn btn-secondary btn-lg btn-block" type="submit">Acceseder</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

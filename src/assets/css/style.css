@@ -1,0 +1,68 @@
+/* Header o Navbar */
+.navbar {
+    background-color: rgb(0, 0, 44);
+}
+.redes-sociales a {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+    padding: 5px;
+}
+/* Perfil y Sobre mi */
+
+.perfil img {
+    position: relative;
+    bottom: 90px;
+    width: 200px;
+    height: 200px;
+    left: 30px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+.perfil h2 {
+    padding: 10px;
+    margin-top: -60px;
+}
+.perfil p {
+    padding: 10px;
+}
+.sobre-mi {
+    padding: 10px;
+    padding-left: 20px;
+    padding-top: 150px;
+}
+
+/* General */
+p {
+    font-size: 18px;
+}
+
+/* Experiencia y Educacion */
+.exp img {
+    width: 300px;
+    height: 200px;
+    padding: 14px;
+}
+
+/* Proyectos */
+.proy a img {
+    height: 50px;
+    width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .perfil img {
+        height: 140px;
+        width: 140px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .ban img {
+        height: 230px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sobre-mi {
+        padding-top: 10px;
+    }
+}

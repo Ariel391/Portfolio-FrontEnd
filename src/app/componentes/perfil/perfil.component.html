@@ -1,0 +1,23 @@
+<div class="container-fluid border-bottom border-black" >
+    <div class="col-lg-2">  
+    </div>
+    <div class="ban pt-3">
+        <img src="assets/img/L1.jpg" class="rounded-5" class="img-fluid" width="100%" alt="Imagen de Programacion">
+    </div>
+    <div class="row">
+        <div class="perfil col-md-3 ">
+            <img src={{persona.img}} alt="Mi imagen">
+            <h2>{{persona.nombre}} {{persona.apellido}}</h2>
+            <h5>{{persona.titulo}}</h5>
+        </div>
+        <div class="sobre-mi col-md-9 ">
+            <h2>Sobre mi</h2>
+            <p>{{persona.sobreMi}}</p>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end  boton">
+            <button type="button" class="btn btn-success" routerLink="/editperfil/1" *ngIf="isLogged">
+                <i class="bi bi-pencil-square"></i> EDITAR PERSONA
+            </button>
+        </div>
+    </div>
+</div>
